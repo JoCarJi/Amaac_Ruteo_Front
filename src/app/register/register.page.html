@@ -1,0 +1,51 @@
+<ion-header></ion-header>
+
+<ion-content padding style="--background: #225AC7;">
+  <!-- Contenedor circular para la imagen -->
+  <div class="circle-container">
+    <img src="assets/location.png" alt="Logo" />
+  </div>
+
+  <div class="welcome-container">
+    <h1 class="welcome-text">CREATE ACCOUNT</h1>
+  </div>
+
+  <div class="form-container">
+    <form (ngSubmit)="onRegister()" #registerForm="ngForm">
+      <div class="input-container">
+        <!-- Campo de nombre -->
+        <ion-item class="input-item">
+          <ion-icon name="person-outline" slot="start" class="input-icon"></ion-icon>
+          <ion-input type="text" placeholder="Nombre" [(ngModel)]="nombre" name="nombre" required></ion-input>
+        </ion-item>
+
+        <!-- Campo de apellido -->
+        <ion-item class="input-item">
+          <ion-icon name="person-outline" slot="start" class="input-icon"></ion-icon>
+          <ion-input type="text" placeholder="Apellido" [(ngModel)]="apell" name="apell" required></ion-input>
+        </ion-item>
+
+        <!-- Campo de celular -->
+        <ion-item class="input-item">
+          <ion-icon name="call-outline" slot="start" class="input-icon"></ion-icon>
+          <ion-input type="text" placeholder="Celular" [(ngModel)]="telefono" name="telefono" required></ion-input>
+        </ion-item>
+
+        <!-- Campo de email -->
+        <ion-item class="input-item">
+          <ion-icon name="mail-outline" slot="start" class="input-icon"></ion-icon>
+          <ion-input type="email" placeholder="Email" [(ngModel)]="email" name="email" required></ion-input>
+        </ion-item>
+
+        <!-- Campo de contraseña -->
+        <ion-item class="input-item">
+          <ion-icon name="lock-closed-outline" slot="start" class="input-icon"></ion-icon>
+          <ion-input type="password" placeholder="Contraseña" [(ngModel)]="password" name="password" required></ion-input>
+          <ion-icon name="eye-outline" slot="end" class="input-icon"></ion-icon>
+        </ion-item>
+      </div>
+
+      <ion-button class="button-create" expand="block" type="submit">Register</ion-button>
+    </form>
+  </div>
+</ion-content>

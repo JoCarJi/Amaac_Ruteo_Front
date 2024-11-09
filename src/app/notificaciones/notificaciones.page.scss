@@ -1,0 +1,76 @@
+ion-content {
+    --background: white; 
+    position: relative;
+  }
+  
+  ion-card {
+    margin: 10px auto; 
+    width: 90%;
+    height: 21%;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  ion-card-content {
+    padding: 10px;
+  }
+  
+  .solicitud-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .solicitud-info h2{
+    font-size: 18px;
+    margin: 0;
+    color: rgb(0, 0, 0);
+  }
+  
+  .solicitud-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .solicitud-header h2 {
+    font-size: 18px;
+    margin: 0;
+    color: rgb(0, 0, 0);
+  }
+  
+  .solicitud-header span {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .solicitud-info p {
+    font-size: 14px;
+    margin: 2px 0;
+    color: rgb(0, 0, 0);
+  }
+  
+  ion-button {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: calc(100% - 40px); 
+    max-width: 500px; 
+    margin: 0; 
+    padding: 0 20px; 
+    --background: #b0b0b0;
+    --color: black;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .btnrute{
+    margin-bottom: 10px;
+  }
+  
+  .btnrute, .btnacep{
+    height: 25px;
+    font-size: 15px;
+  }

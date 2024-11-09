@@ -1,0 +1,19 @@
+<ion-content>
+  <ion-card *ngFor="let pedido of pedidos">
+    <ion-card-content>
+      <div class="pedido-info">
+        <div class="pedido-header">
+          <!-- Use 'nombreUsuario' instead of 'nombre' -->
+          <h2>{{ pedido.nombreUsuario }}</h2> 
+          <span>{{ pedido.telefono }}</span>
+        </div>
+        <p>{{ pedido.direccion }}</p>
+        <p>{{ pedido.detalles }}</p>
+        <button class="btnrute" (click)="generarRuta(pedido)">Generar Ruta</button>
+        <button class="btnacep" 
+                [disabled]="pedido.aceptado" 
+                (click)="aceptarPedido(pedido)">Aceptar</button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

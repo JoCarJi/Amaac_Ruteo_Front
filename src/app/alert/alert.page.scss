@@ -1,0 +1,91 @@
+ion-content {
+    --background: #F3F3F3;
+    position: relative; /* Necesario para posicionar la imagen en relación al contenedor */
+  }
+  
+  .item-container {
+    display: flex;
+    justify-content: space-between; /* Mantiene el espacio entre los elementos */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .item-container ion-label {
+    margin-top: 30px; /* Espacio adicional si es necesario */
+    font-size: 1.5rem; /* Tamaño del texto de la etiqueta */
+    margin-left: 20px; /* Desplaza el texto hacia la derecha */
+
+  }
+  
+  .counter {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .counter button {
+    width: 30px; /* Ajusta el tamaño del botón */
+    height: 30px; /* Ajusta el tamaño del botón */
+    border-radius: 50%; /* Hace el botón circular */
+    background-color: #007bff; /* Color azul de fondo */
+    color: white; /* Color blanco para el texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Quita el padding para ajustar el tamaño del botón */
+    font-size: 1.2rem; /* Tamaño del texto */
+    margin: 0 5px; /* Espacio entre los botones y el texto */
+    border: none; /* Quita el borde predeterminado */
+  }
+  
+  .counter-input {
+    width: 60px; /* Ajusta el ancho según tus necesidades */
+    text-align: center;
+    font-size: 1rem; /* Ajusta el tamaño del texto según tus necesidades */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #CCCCCC4F; /* Color de fondo de la casilla */
+  }
+
+  .logo-container {
+    position: absolute;
+    bottom: 120px; /* Posiciona la imagen en la parte inferior */
+    right: 20px; /* Posiciona la imagen a la izquierda */
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Ajusta el padding según sea necesario */
+  }
+  
+  .logo-image {
+    width: 81px;
+    height: 78px;
+    top: 201px;
+    left: -72px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  
+  .alert-button-container {
+    position: absolute;
+    bottom: 10px; /* Ajusta esta propiedad para mover el botón hacia arriba o abajo */
+    left: 50%; /* Centra el contenedor horizontalmente */
+    transform: translateX(-50%); /* Ajusta el contenedor para estar centrado */
+    width: 100%; /* Asegura que el contenedor use el ancho disponible */
+    display: flex;
+    justify-content: center; /* Centra el botón dentro del contenedor */
+    padding: 10px; /* Espacio adicional si es necesario */
+  }
+  
+  .alert-button-container ion-button {
+    background-color: #B6B6B6; /* Color de fondo del botón */
+    color: #000000; /* Color del texto del botón */
+    width: 300px; /* Ajusta el ancho del botón */
+    height: 70px; /* Ajusta la altura del botón */
+    font-size: 1.4rem; /* Tamaño del texto del botón */
+    border-radius: 0px; /* No redondeado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  

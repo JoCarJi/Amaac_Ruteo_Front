@@ -1,0 +1,99 @@
+ion-content {
+    --background: #225AC7; /* Color de fondo para el contenido */
+}
+
+.circle-container {
+    width: 245px; /* Tamaño del círculo */
+    height: 245px; /* Igual al ancho para que sea circular */
+    background-color: #B0DBED; /* Color celeste para el fondo del círculo */
+    border-radius: 50%; /* Hace el contenedor circular */
+    display: flex;
+    align-items: center; /* Centra la imagen verticalmente */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    overflow: hidden; /* Oculta la parte de la imagen que sale del contenedor */
+    margin: 60px auto 20px auto; /* Margen alrededor del círculo */
+}
+
+.circle-container img {
+    width: 150px; /* Tamaño de la imagen dentro del círculo */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+.form-container {
+    padding: 16px; /* Espaciado alrededor del formulario */
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column; /* Organiza los campos de entrada verticalmente */
+    gap: 12px; /* Espacio entre los campos */
+    max-width: 300px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario */
+}
+
+.input-item {
+    display: flex;
+    align-items: center; /* Alinea los elementos dentro del campo */
+    background-color: white; /* Fondo blanco para los campos */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 6px 12px; /* Espaciado interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.input-icon {
+    color: #22C7A9; /* Color del icono */
+    font-size: 20px; /* Tamaño del icono */
+    margin-right: 8px; /* Espacio entre el icono y el campo de entrada */
+}
+
+ion-input {
+    border: none; /* Elimina el borde predeterminado del ion-input */
+    padding: 0; /* Elimina el espaciado interno del ion-input */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+}
+
+.register-container {
+    text-align: center; /* Centra el texto */
+    margin-top: 20px; /* Espacio arriba del texto de registro */
+}
+
+.register-text {
+    color: black; /* Color del texto */
+    font-weight: bold; /* Negrita para el texto */
+}
+
+.register-text a {
+    color: black; /* Color negro para el enlace */
+    text-decoration: underline; /* Subrayado del enlace */
+}
+
+.register-text a:hover {
+    text-decoration: underline; /* Subrayado en el hover para el enlace */
+}
+
+.button-create {
+    --background: rgb(158, 156, 156); /* Color de fondo gris */
+    --color: black; /* Color del texto negro */
+    border-radius: 50px; /* Bordes más redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Espaciado interno */
+    width: 100%; /* Ocupar todo el ancho disponible */
+    max-width: 240px; /* Ancho máximo del botón */
+    margin: 20px auto; /* Centrar el botón */
+    text-transform: capitalize; /* Solo la primera letra en mayúscula */
+    box-shadow: none; /* Sin sombra */
+}
+
+.welcome-container {
+    text-align: center; /* Centra el texto */
+    margin-top: 40px; /* Espacio encima del título */
+    margin-bottom: 40px; /* Espacio debajo del título */
+  }
+  
+  .welcome-text {
+    color: white; /* Color blanco para el texto */
+    font-size: 24px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+  }

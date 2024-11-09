@@ -1,0 +1,37 @@
+<ion-header>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Contador para Botellas -->
+  <div class="item-container">
+    <ion-label>BOTELLA</ion-label>
+    <div class="counter">
+      <img src="assets/menos.jpg" (click)="decrement('botellas')" alt="Decrementar Botellas" class="counter-button">
+      <input type="number" [(ngModel)]="botellas" (ngModelChange)="onQuantityChange('botellas', $event)" class="counter-input">
+      <img src="assets/mas.jpg" (click)="increment('botellas')" alt="Incrementar Botellas" class="counter-button">
+    </div>
+  </div>
+
+  <!-- Contador para Baldes -->
+  <div class="item-container">
+    <ion-label>BALDE</ion-label>
+    <div class="counter">
+      <img src="assets/menos.jpg" (click)="decrement('baldes')" alt="Decrementar Baldes" class="counter-button">
+      <input type="number" [(ngModel)]="baldes" (ngModelChange)="onQuantityChange('baldes', $event)" class="counter-input">
+      <img src="assets/mas.jpg" (click)="increment('baldes')" alt="Incrementar Baldes" class="counter-button">
+    </div>
+  </div>
+
+  <!-- Imagen del logo de WhatsApp con enlace -->
+  <div class="logo-container">
+    <a href="https://wa.me/979275552" target="_blank">
+      <img src="assets/wsp.jpg" alt="WhatsApp Logo" class="logo-image">
+    </a>
+  </div>
+
+  <!-- Botón Generar Alertas -->
+  <div class="alert-button-container">
+    <ion-button expand="full" color="#B6B6B6" (click)="generarAlerta()">Generar Alerta</ion-button>
+  </div>
+</ion-content>

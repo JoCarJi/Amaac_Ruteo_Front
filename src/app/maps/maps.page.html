@@ -1,0 +1,25 @@
+<ion-header class="ion-no-border" lines="none">
+  <ion-button class="back-button" (click)="goBack()">
+    <ion-icon name="arrow-back"></ion-icon>
+  </ion-button>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item class="ion-no-border iit2" lines="none">
+      <div id="map" style="width: 100%; height: 400px;"></div> <!-- Asegúrate de que tenga dimensiones -->
+    </ion-item>
+    <!-- Botón para iniciar la navegación en tiempo real -->
+    <ion-item class="ion-no-border iit3" lines="none">
+      <ion-button (click)="startNavigation()" class="btnnav" expand="block" shape="round" color="primary">
+        INICIAR RUTA
+      </ion-button>
+    </ion-item>
+
+    <ion-item class="ion-no-border iit3" lines="none"> 
+      <ion-button class="btnfin" expand="block" shape="round">
+        ENTREGA FINALIZADA
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

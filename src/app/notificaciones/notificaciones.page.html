@@ -1,0 +1,17 @@
+<ion-content>
+  <ion-card *ngFor="let pedido of pedidos">
+    <ion-card-content>
+      <div class="solicitud-info">
+        <div class="solicitud-header">
+          <!-- Use 'nombreUsuario' instead of 'nombre' -->
+          <h2>{{pedido.estado}}</h2> 
+          <span>{{pedido.fecha}}</span>
+        </div>
+        <p>Botellas: {{pedido.botellas}}</p>
+        <p>Baldes: {{pedido.baldes}}</p>
+        <h2>{{pedido.direccion}}</h2>         
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
